@@ -2,38 +2,308 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
- 
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<script type="text/javascript">
-	    $( document ).ready(function(){
-	        var userLang = navigator.language || navigator.userLanguage;
-	        if (userLang.includes("en")) {
-	            window.location.href = "en/index.html"
-	        }
-	        else
-	        if (userLang.includes("pt")) {
-	            window.location.href = "pt/index.html"
-	        }
-	        else
-	        if (userLang.includes("es")) {
-	            window.location.href = "es/index.html"
-	        }
-	        else
-	    	if (userLang.includes("fr")) {
-	            window.location.href = "fr/index.html"
-	        }
-	        else {
-	            window.location.href = "en/index.html"
-	        }
-	    });
-	</script>
+  <title>Scrolling Nav - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS  -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  	.h2, h2 {
+  	}
+
+	.p, p {
+	}	
+  </style>
+  
+
 </head>
 
-<body>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Upsilamba</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">What we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#barriers">No barriers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#howworks">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Reader software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Get in contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--
+  <header class="bg-light mysection">
+    <div class="container text-center">
+      <h1>Upsilamba</h1>
+      <p class="lead">A nice catch phrase</p>
+    </div>
+  </header>
+-->
+
+ <section id="about" class="mysection">
+    <div class="container">
+      <div class="container text-center" style="margin-top:30px">
+	       <h2>What we do</h2>
+	  </div>         
+      <div class="row">
+        <div class="col-lg-16 mx-auto text-center" style="margin-top:30px">        	
+          <p class="lead">We convert <b>any</b> document into structured audio.</p>
+          <p class="lead">Our objective is high accuracy.</p>
+          <p class="lead">Tailor made for blind and vision impaired.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section id="barriers" class="bg-light mysection">
+    <div class="container">    
+      	<div class="container text-center">
+	       <h2>No barriers to knowledge</h2>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-16 mx-auto text-center"  style="margin-top:30px">
+		       <p class="lead">OCR is flawed.</p>
+		       <p class="lead">Screen readers are not made for reading documents.</p>	       
+		       <p class="lead">Listen to how we can do better!</p>
+		  </div>
+	    </div> 
+
+        <div class="comparisonexample">
+	        <div class="work_inner row">
+				<div class="col-lg-6">
+					<div class="work_item">
+						<h5>Original text. Some math.</h5>
+						<a href="img/calculusen.jpg">  
+							<img alt="excerpt from a math book." src="img/calculusen.jpg" width=450" height="180">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="work_item">					
+						<h5>What the OCR sees.</h5>
+						<a href="img/ocrcalculusen.jpg">
+							<img alt="ocr extraction of the excerpt from a math book." src="img/ocrcalculusen.jpg" width=450" height="180">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="work_inner row" style="margin-top:20px">
+				<div class="col-lg-6">
+					<div class="work_item">				
+						<h5>We reading the original.</h5>
+						<audio controls>
+						  <source src="audio/mycalculus.mp3" type="audio/mpeg">
+						  Audio generated by our technology.
+						</audio>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="work_item">
+						<h5>Reading output from the OCR.</h5>
+						<audio controls>
+						  <source src="audio/ocrcalculus.mp3" type="audio/mpeg">
+						  Audio generated by reading an OCR output.
+						</audio>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<hr/>		
+
+		<div class="comparisonexample">
+	        <div class="work_inner row">
+				<div class="col-lg-6">
+					<div class="work_item">
+						<h5>Original text. Tabular data.</h5>
+						<a href="img/mytableen.png">  
+							<img alt="example showing a table with data." src="img/tableen.png" width=450" height="180">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="work_item">					
+						<h5>What the OCR sees.</h5>
+						<a href="img/ocrtableen.png">
+							<img alt="ocr extraction of the document with a table" src="img/ocrtableen.png" width=450" height="180">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="work_inner row" style="margin-top:20px">
+				<div class="col-lg-6">
+					<div class="work_item">				
+						<h5>We reading the original.</h5>
+						<p>Table structure is understood.<p>
+						<audio controls>
+						  <source src="audio/mytable.mp3" type="audio/mpeg">
+						  Audio generated by our technology.
+						</audio>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="work_item">
+						<h5>Reading output, OCR version.</h5>
+						<p>Reader can't understand table cell structure.<p>
+						<audio controls>
+						  <source src="audio/ocrtable.mp3" type="audio/mpeg">
+						  Audio generated by reading an OCR output.
+						</audio>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<hr/>
+
+		<div class="comparisonexample">
+	        <div class="work_inner row">
+				<div class="col-lg-6">
+					<div class="work_item">
+						<h5>Original document, complex layout.</h5>
+						<a href="img/imageen.jpg">  
+							<img alt="example showing a document with non standard layout." src="img/imageen.jpg" width=450" height="180">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="work_item">					
+						<h5>What the OCR sees.</h5>
+						<a href="img/ocrimageen.jpg">
+							<img alt="ocr extraction of non standard layout." src="img/ocrimageen.jpg" width=450" height="180">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="work_inner row" style="margin-top:20px">
+				<div class="col-lg-6">
+					<div class="work_item">				
+						<h5>We reading the original.</h5>
+						<audio controls>
+						  <source src="audio/mymath.mp3" type="audio/mpeg">
+						  Audio generated by our technology.
+						</audio>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="work_item">
+						<h5>Reading output, OCR version.</h5>
+						<audio controls>
+						  <source src="audio/ocrmath.mp3" type="audio/mpeg">
+						  Audio generated by reading an OCR output.
+						</audio>
+					</div>
+				</div>			
+			</div>
+		</div>
+
+    </div>
+  </section>
+
+ <section id="howworks" class="mysection">
+    <div class="container">
+      <div class="container text-center">
+	       <h2>How it works</h2>
+	  </div>	  	
+	  <div class="row">
+	  		<div class="col-lg-4 text-center lead" style="margin-top:30px">
+	  			<img src="img/one-gs.png" width=50" height="50" style="margin-bottom: 20px"/>
+          		<p>Send us your document.</p><p>Either a PDF file or scanned images.</p>
+          	</div>
+          	<div class="col-lg-4 text-center lead" style="margin-top:30px">
+          		<img src="img/two-gs.png" width=50" height="50" style="margin-bottom: 20px"/>
+          		<p>We convert it and send it back to you.</p>
+          	</div>
+          	<div class="col-lg-4 text-center lead" style="margin-top:30px">
+          		<img src="img/three-gs.png" width=50" height="50" style="margin-bottom: 20px"/>
+          		<p>Download our specialized reader</p><p>and start reading.</p>
+          	</div>
+		</div>
+		<div class="row">
+          <p class="col-lg-12 text-center lead" style="padding-top:30px">That's all!</p>
+      	</div>
+    </div>
+  </section>
+
+  <section id="download" class="bg-light mysection">
+    <div class="container">
+    	<div class="container text-center">
+	       <h2>Flexible, easy and free dedicated reader software.</h2>
+	    </div>         
+        <div class="row">
+	        <div class="col-lg-16 mx-auto" style="margin-top:30px">
+	          <p class="lead"><b>Efficient navigation</b>: skip pages, go directly to images, tables, equations and other text elements.</p>
+	          <p class="lead"><b>User in control</b>: voice's speed; character, word or sentence reading; repetitions.</p>
+	          <p class="lead"><b>Interaction</b>: mark the document with your own references; annotate with brief text passages.</p>
+	          <p class="lead"><b>Simple</b>: 10 minutes tutorial and you're ready to go.</p>
+	        </div>
+     	</div>
+
+        <div class="col-lg-16 mx-auto text-center" style="margin-top:30px">
+          <p class="lead">We support English, Portuguese and Spanish. Others to come.</p>
+		</div>
+      </div>
+    </div>
+  </section>
+
+ <section id="contact" class="mysection">
+    <div class="container">
+      <div class="row">
+      	<div class="container text-center">
+	       <h2>Get in contact</h2>
+	    </div>         
+        <div class="col-lg-16 mx-auto text-center"  style="margin-top:50px">        	
+          <p class="lead">If you want to try the service, or want more information, just drop us a line at.</p>
+          <p class="lead">contact@upsilamba.org</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Upsilamba 2019-2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
 </body>
+
 </html>
