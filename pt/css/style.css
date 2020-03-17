@@ -1,11 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700");
 
-body {
-  line-height: 24px;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
+@media screen and (max-width : 1204px)
+{
+  body {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
 }
+
+@media screen and (max-width : 320px)
+{
+  body {
+    line-height: 24px;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+}
+
+
 
 h1, h2, h3, h4 {
  font-family: "Heebo", sans-serif;
