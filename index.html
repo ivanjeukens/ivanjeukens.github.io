@@ -26,7 +26,8 @@
 		}
 		
 	    $( document ).ready(function(){
-		ipLookUp()
+		var country = ipLookUp();
+	    	console.log("contry = ", country);
 		    
 	        var userLang = navigator.language || navigator.userLanguage;
 	        if (userLang.includes("en")) {
