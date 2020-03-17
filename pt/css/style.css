@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700");
+
+body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+ font-family: "Heebo", sans-serif;
+  font-weight: bold; 
+}
+
+h5, h6 {
+  font-family: "Heebo", sans-serif; 
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 75px; }
+  .main_title h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .main_title p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;    
+    margin-bottom: 0px;
+    max-width: 100em;
+    margin: auto; }
+  .main_title.white h2 {
+    color: #fff; }
+  .main_title.white p {
+    color: #fff;
+}
+
+.work_inner {
+  margin-bottom: -50px; }
+
+.work_item {
+  text-align: center;
+  margin-bottom: 50px; }
+  .work_item i {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    background: #f9f9ff;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: #222222;
+    margin-bottom: 30px; }
+  .work_item h4 {
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .work_item p {
+    max-width: 310px;
+    margin: auto; }  
+
+.mysection {
+	padding: 100px;
+}
+
+.comparisonexample {
+	padding-bottom: 25px;	
+	padding-top: 25px;
+	background: #e4e6eb;
+}
