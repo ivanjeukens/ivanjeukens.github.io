@@ -84,3 +84,7 @@ h5, h6 {
   max-width: 100%;
   height: auto;
 }
+
+audio { width: 100%; height: autdo; display: block; }
+
+
